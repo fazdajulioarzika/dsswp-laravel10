@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dev:hover {
+    background-image: linear-gradient(
+        to right,
+        #ff00ff,
+        #800080,
+        #0000ff
+    ); /* Ganti warna sesuai keinginan Anda */
+    background-clip: text;
+    color: transparent;
+}
