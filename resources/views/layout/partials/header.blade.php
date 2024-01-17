@@ -183,11 +183,14 @@
             <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
                 <!-- online builder btn  -->
                 <li class="flex items-center">
-                    <a href="/auth"
-                        class="block px-0 py-2 text-sm font-semibold transition-all ease-nav-brand text-slate-500">
-                        <i class="fa fa-user sm:mr-1"></i>
-                        <span class="hidden sm:inline">Logout</span>
-                    </a>
+                    <form action="/auth/logout" method="post">
+                        @csrf
+                        <button type="submit"
+                            class="block px-0 py-2 text-sm font-semibold transition-all ease-nav-brand text-slate-500">
+                            <i class="fa fa-user sm:mr-1"></i>
+                            <span class="hidden sm:inline">Logout</span>
+                        </button>
+                    </form>
                 </li>
                 <li class="flex items-center pl-4 xl:hidden">
                     <a id="toggleSidebar" class="block p-0 text-sm transition-all ease-nav-brand text-slate-500"
